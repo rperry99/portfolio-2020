@@ -1,0 +1,14 @@
+{
+  "name": "2020-portfolio",
+  "version": "1.0.0",
+  "description": "My 2020 Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/0 dist/css/ --recursive"
+  },
+  "author": "Russ Perry",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
