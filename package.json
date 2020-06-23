@@ -4,7 +4,7 @@
   "description": "My 2020 Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/0 dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Russ Perry",
   "license": "MIT",
