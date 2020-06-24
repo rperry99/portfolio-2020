@@ -1,3 +1,8 @@
-//Fix hero height on mobile
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
+//Set the height of the hero section
+const hero = getElem("hero");
+hero.style.height = window.innerHeight;
+
+//Function to quickly create variables for elements in the DOM
+function getElem(elemID) {
+  return document.getElementById(elemID);
+}
