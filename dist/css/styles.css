@@ -48,3 +48,56 @@ body {
     #hero #check-it-out i:before {
       font-size: 2rem;
       color: #679436; }
+
+footer {
+  position: relative;
+  height: max-content;
+  background: #41463d;
+  padding: 2rem 1rem; }
+  footer #back-to-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    background: #679436;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; }
+  footer #socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 1rem auto; }
+    footer #socials a {
+      text-decoration: none; }
+      footer #socials a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: #8d909b;
+        height: 40px;
+        width: 40px;
+        font-size: 1.5rem;
+        color: white; }
+      footer #socials a:hover i {
+        color: #41463d; }
+  footer #copy {
+    color: #8d909b;
+    text-align: center; }
+    footer #copy span {
+      color: #8d909b; }
+
+@media (min-width: 767px) {
+  footer #socials {
+    width: 50%; } }
+
+@media (min-width: 1200px) {
+  footer #socials {
+    width: 40%; } }

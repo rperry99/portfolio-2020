@@ -1,0 +1,63 @@
+footer {
+  position: relative;
+  height: max-content;
+  background: $black;
+  padding: 2rem 1rem;
+  #back-to-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    background: $accent;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 5px;
+    @include center-content;
+    text-decoration: none;
+  }
+  #socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 1rem auto;
+    a {
+      text-decoration: none;
+      i {
+        @include center-content;
+        border-radius: 5px;
+        background: $primary;
+        height: 40px;
+        width: 40px;
+        font-size: 1.5rem;
+        color: white;
+      }
+      &:hover i {
+        color: $black;
+      }
+    }
+  }
+  #copy {
+    color: $primary;
+    text-align: center;
+    span {
+      color: $primary;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  footer {
+    #socials {
+      width: 50%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    #socials {
+      width: 40%;
+    }
+  }
+}
