@@ -11,10 +11,14 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+html {
+  height: 100%; }
 
 #hero {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
