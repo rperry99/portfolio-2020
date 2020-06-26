@@ -10,5 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rperry99/portfolio-2020.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rperry99/portfolio-2020/issues"
+  },
+  "homepage": "https://github.com/rperry99/portfolio-2020#readme"
 }
