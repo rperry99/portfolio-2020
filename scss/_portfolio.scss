@@ -1,0 +1,63 @@
+$port-margin: 1rem;
+
+#portfolio {
+  padding: 2rem 1rem;
+  h2 {
+    margin-bottom: $port-margin;
+  }
+  #projects {
+    @include center-content;
+    flex-direction: column;
+    .card {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+      background: lighten($accent, 80%);
+      h3 {
+        text-align: center;
+        margin-bottom: $port-margin;
+      }
+      .image {
+        height: 167px;
+        width: 300px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: $port-margin;
+      }
+      .buttons {
+        @include center-content;
+        margin-bottom: $port-margin;
+        a {
+          @include center-content;
+          height: 30px;
+          width: 75px;
+          text-decoration: none;
+        }
+        .github {
+          margin-right: 20px;
+          background: white;
+          border: solid 2px $accent;
+          color: $accent;
+        }
+        .live {
+          background: $accent;
+          color: white;
+        }
+      }
+    }
+    .stack {
+      ul {
+        @include center-content;
+        list-style: none;
+        li {
+          color: #999;
+          font-style: italic;
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

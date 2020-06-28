@@ -1,0 +1,42 @@
+#about {
+    background: $accent;
+    padding: 2rem 1rem;
+    position: relative;
+    margin-top: 2rem;
+    h2 {
+        color: white;
+        margin-bottom: 1rem;
+    }
+    p {
+        color: white;
+        line-height: 1.5rem;
+    }
+    &:before {
+        height: 50px;
+        width: 50%;
+        content: '';
+        background: lighten($accent, 20%);
+        position: absolute;
+        z-index: -1;
+        top: -25px;
+        right: 50%;
+        transform-origin: center;
+        transform: skewX(45deg);
+        border-radius: 5px;
+    }
+}
+@media (min-width: 760px){
+    #about {
+        &:before {
+            width: 25%;
+            right: 75%;
+        }
+        h2, p {
+            width: 50%;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-bottom: 2rem;
+        }
+    }
+}

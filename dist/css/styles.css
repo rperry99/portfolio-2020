@@ -46,6 +46,95 @@ html {
       font-size: 2rem;
       color: #679436; }
 
+#about {
+  background: #679436;
+  padding: 2rem 1rem;
+  position: relative;
+  margin-top: 2rem; }
+  #about h2 {
+    color: white;
+    margin-bottom: 1rem; }
+  #about p {
+    color: white;
+    line-height: 1.5rem; }
+  #about:before {
+    height: 50px;
+    width: 50%;
+    content: '';
+    background: #9ac868;
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    right: 50%;
+    transform-origin: center;
+    transform: skewX(45deg);
+    border-radius: 5px; }
+
+@media (min-width: 760px) {
+  #about:before {
+    width: 25%;
+    right: 75%; }
+  #about h2, #about p {
+    width: 50%;
+    margin: 0 auto; }
+  #about h2 {
+    margin-bottom: 2rem; } }
+
+#portfolio {
+  padding: 2rem 1rem; }
+  #portfolio h2 {
+    margin-bottom: 1rem; }
+  #portfolio #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #portfolio #projects .card {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+      background: white; }
+      #portfolio #projects .card h3 {
+        text-align: center;
+        margin-bottom: 1rem; }
+      #portfolio #projects .card .image {
+        height: 167px;
+        width: 300px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1rem; }
+      #portfolio #projects .card .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem; }
+        #portfolio #projects .card .buttons a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 75px;
+          text-decoration: none; }
+        #portfolio #projects .card .buttons .github {
+          margin-right: 20px;
+          background: white;
+          border: solid 2px #679436;
+          color: #679436; }
+        #portfolio #projects .card .buttons .live {
+          background: #679436;
+          color: white; }
+    #portfolio #projects .stack ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none; }
+      #portfolio #projects .stack ul li {
+        color: #999;
+        font-style: italic; }
+        #portfolio #projects .stack ul li:not(:last-child) {
+          margin-right: 10px; }
+
 footer {
   position: relative;
   height: max-content;
