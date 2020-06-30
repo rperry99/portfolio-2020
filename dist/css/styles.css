@@ -93,7 +93,7 @@ html {
       width: 100%;
       padding: 1rem;
       margin: 0 auto;
-      background: white; }
+      margin-bottom: 1rem; }
       #portfolio #projects .card h3 {
         text-align: center;
         margin-bottom: 1rem; }
@@ -103,7 +103,8 @@ html {
         margin: 0 auto;
         background-size: cover;
         background-position: center;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        border-radius: 5px; }
       #portfolio #projects .card .buttons {
         display: flex;
         justify-content: center;
@@ -115,7 +116,8 @@ html {
           align-items: center;
           height: 30px;
           width: 75px;
-          text-decoration: none; }
+          text-decoration: none;
+          border-radius: 5px; }
         #portfolio #projects .card .buttons .github {
           margin-right: 20px;
           background: white;
@@ -134,6 +136,21 @@ html {
         font-style: italic; }
         #portfolio #projects .stack ul li:not(:last-child) {
           margin-right: 10px; }
+
+@media (min-width: 1020px) {
+  #portfolio #projects {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #portfolio #projects .card {
+      width: 45%; } }
+
+@media (min-width: 1440px) {
+  #portfolio #projects .card {
+    width: 23%; }
+    #portfolio #projects .card .stack ul {
+      width: 75%;
+      margin: 0 auto;
+      flex-wrap: wrap; } }
 
 footer {
   position: relative;
