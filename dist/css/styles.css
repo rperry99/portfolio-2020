@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   color: #41463d; }
 
 body,
@@ -130,6 +130,9 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
       list-style: none; }
       #portfolio #projects .stack ul li {
         color: #999;
@@ -151,6 +154,28 @@ html {
       width: 75%;
       margin: 0 auto;
       flex-wrap: wrap; } }
+
+#contact {
+  padding: 2rem 1rem;
+  background: #5a6155; }
+  #contact h2 {
+    color: white; }
+  #contact form {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #contact form input,
+    #contact form textarea {
+      width: 100%;
+      outline: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px; }
+    #contact form input {
+      margin-bottom: 1rem; }
 
 footer {
   position: relative;

@@ -1,0 +1,24 @@
+#contact {
+  padding: 2rem 1rem;
+  background: lighten($black, 10%);
+  h2 {
+    color: white;
+  }
+  form {
+    width: 80%;
+    margin: 1rem auto;
+    @include center-content;
+    flex-direction: column;
+    input,
+    textarea {
+      width: 100%;
+      outline: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    input {
+      margin-bottom: 1rem;
+    }
+  }
+}

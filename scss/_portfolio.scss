@@ -51,6 +51,9 @@ $port-margin: 1rem;
     .stack {
       ul {
         @include center-content;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
         list-style: none;
         li {
           color: #999;
