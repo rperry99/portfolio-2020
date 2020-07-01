@@ -161,7 +161,7 @@
 
     <section id="contact">
       <h2>Get in touch with me!</h2>
-      <form>
+      <form action="php/contact.php" method="POST">
         <input type="text" name="name" id="name" placeholder="Name" />
         <input type="email" name="name" id="email" placeholder="Email" />
         <input type="text" name="name" id="subject" placeholder="Subject" />
@@ -172,6 +172,7 @@
           rows="10"
           placeholder="Message"
         ></textarea>
+        <button type="submit" name="submit">Send Email</button>
       </form>
     </section>
 
