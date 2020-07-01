@@ -12,7 +12,7 @@ $port-margin: 1rem;
       width: 100%;
       padding: 1rem;
       margin: 0 auto;
-      background: lighten($accent, 80%);
+      margin-bottom: $port-margin;
       h3 {
         text-align: center;
         margin-bottom: $port-margin;
@@ -24,6 +24,7 @@ $port-margin: 1rem;
         background-size: cover;
         background-position: center;
         margin-bottom: $port-margin;
+        border-radius: 5px;
       }
       .buttons {
         @include center-content;
@@ -33,6 +34,7 @@ $port-margin: 1rem;
           height: 30px;
           width: 75px;
           text-decoration: none;
+          border-radius: 5px;
         }
         .github {
           margin-right: 20px;
@@ -49,6 +51,9 @@ $port-margin: 1rem;
     .stack {
       ul {
         @include center-content;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
         list-style: none;
         li {
           color: #999;
@@ -56,6 +61,32 @@ $port-margin: 1rem;
           &:not(:last-child) {
             margin-right: 10px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  #portfolio {
+    #projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .card {
+        width: 45%;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  #portfolio {
+    #projects {
+      .card {
+        width: 23%;
+        .stack ul {
+          width: 75%;
+          margin: 0 auto;
+          flex-wrap: wrap;
         }
       }
     }
