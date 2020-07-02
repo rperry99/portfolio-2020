@@ -186,6 +186,10 @@ html {
       color: white;
       font-weight: bold; }
 
+@media (min-width: 1000px) {
+  #contact form {
+    width: 50%; } }
+
 footer {
   position: relative;
   height: max-content;
