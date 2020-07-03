@@ -48,15 +48,18 @@ html {
 
 #about {
   background: #679436;
-  padding: 2rem 1rem 10rem;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
   position: relative;
-  margin-top: 2rem; }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
   #about h2 {
     color: white;
     margin-bottom: 1rem; }
   #about p {
     color: white;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    margin-bottom: 1rem; }
   #about:before {
     height: 50px;
     width: 50%;
@@ -69,20 +72,6 @@ html {
     transform-origin: center;
     transform: skewX(45deg);
     border-radius: 5px; }
-  #about .custom-shape-divider-bottom-1593743388 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0; }
-    #about .custom-shape-divider-bottom-1593743388 svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 150px; }
-    #about .custom-shape-divider-bottom-1593743388 .shape-fill {
-      fill: #ffffff; }
 
 @media (min-width: 760px) {
   #about:before {

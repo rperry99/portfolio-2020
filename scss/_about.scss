@@ -1,8 +1,11 @@
+$about-radius: 20px;
 #about {
   background: $accent;
-  padding: 2rem 1rem 10rem;
-  position: relative;
+  padding: 2rem 1rem;
   margin-top: 2rem;
+  position: relative;
+  border-bottom-left-radius: $about-radius;
+  border-bottom-right-radius: $about-radius;
   h2 {
     color: white;
     margin-bottom: 1rem;
@@ -10,6 +13,7 @@
   p {
     color: white;
     line-height: 1.5rem;
+    margin-bottom: 1rem;
   }
   &:before {
     height: 50px;
@@ -23,23 +27,6 @@
     transform-origin: center;
     transform: skewX(45deg);
     border-radius: 5px;
-  }
-  .custom-shape-divider-bottom-1593743388 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 150px;
-    }
-    .shape-fill {
-      fill: #ffffff;
-    }
   }
 }
 @media (min-width: 760px) {
