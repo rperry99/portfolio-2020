@@ -48,7 +48,7 @@ html {
 
 #about {
   background: #679436;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 10rem;
   position: relative;
   margin-top: 2rem; }
   #about h2 {
@@ -69,12 +69,27 @@ html {
     transform-origin: center;
     transform: skewX(45deg);
     border-radius: 5px; }
+  #about .custom-shape-divider-bottom-1593743388 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    #about .custom-shape-divider-bottom-1593743388 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px; }
+    #about .custom-shape-divider-bottom-1593743388 .shape-fill {
+      fill: #ffffff; }
 
 @media (min-width: 760px) {
   #about:before {
     width: 25%;
     right: 75%; }
-  #about h2, #about p {
+  #about h2,
+  #about p {
     width: 50%;
     margin: 0 auto; }
   #about h2 {
@@ -156,8 +171,23 @@ html {
       flex-wrap: wrap; } }
 
 #contact {
-  padding: 2rem 1rem;
-  background: #5a6155; }
+  padding: 10rem 1rem 2rem;
+  background: #5a6155;
+  position: relative; }
+  #contact .custom-shape-divider-top-1593742952 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    #contact .custom-shape-divider-top-1593742952 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px; }
+    #contact .custom-shape-divider-top-1593742952 .shape-fill {
+      fill: #ffffff; }
   #contact h2 {
     color: white; }
   #contact form {

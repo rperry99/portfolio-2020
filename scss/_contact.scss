@@ -1,6 +1,24 @@
 #contact {
-  padding: 2rem 1rem;
+  padding: 10rem 1rem 2rem;
   background: lighten($black, 10%);
+  position: relative;
+  .custom-shape-divider-top-1593742952 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px;
+    }
+    .shape-fill {
+      fill: #ffffff;
+    }
+  }
   h2 {
     color: white;
   }
