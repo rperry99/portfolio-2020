@@ -51,13 +51,15 @@ html {
   padding: 2rem 1rem;
   margin-top: 2rem;
   position: relative;
-  border-radius: 5px; }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
   #about h2 {
     color: white;
     margin-bottom: 1rem; }
   #about p {
     color: white;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    margin-bottom: 1rem; }
   #about:before {
     height: 50px;
     width: 50%;
