@@ -8,18 +8,22 @@
   box-sizing: border-box;
   width: 90%;
   margin: 0 auto;
-  h1 {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem;
-    span {
-      color: $accent;
+  .heroText {
+    width: 100%;
+
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+      span {
+        color: $accent;
+      }
     }
-  }
-  .tagline {
-    padding: 0 1rem;
-    font-size: 1rem;
-    word-wrap: wrap;
+    .tagline {
+      padding: 0 1rem;
+      font-size: 1rem;
+      word-wrap: wrap;
+    }
   }
   #check-it-out {
     @include center-content;
@@ -34,6 +38,43 @@
         font-size: 2rem;
         color: $accent;
       }
+    }
+  }
+  .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    img {
+      width: 70%;
+      margin: 30px auto;
+    }
+  }
+}
+
+// Media Query for tablet
+@media screen and (min-width: 767px) {
+  #hero {
+    .illustration {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// Media Query for small laptop
+@media screen and (min-width: 1024px) {
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    .heroText {
+      width: 50%;
+    }
+    .illustration {
+      width: 50%;
     }
   }
 }

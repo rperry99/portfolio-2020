@@ -22,16 +22,18 @@ html {
   box-sizing: border-box;
   width: 90%;
   margin: 0 auto; }
-  #hero h1 {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem; }
-    #hero h1 span {
-      color: #679436; }
-  #hero .tagline {
-    padding: 0 1rem;
-    font-size: 1rem;
-    word-wrap: wrap; }
+  #hero .heroText {
+    width: 100%; }
+    #hero .heroText h1 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      padding: 0 1rem; }
+      #hero .heroText h1 span {
+        color: #679436; }
+    #hero .heroText .tagline {
+      padding: 0 1rem;
+      font-size: 1rem;
+      word-wrap: wrap; }
   #hero #check-it-out {
     display: flex;
     justify-content: center;
@@ -45,6 +47,29 @@ html {
     #hero #check-it-out i:before {
       font-size: 2rem;
       color: #679436; }
+  #hero .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    #hero .illustration img {
+      width: 70%;
+      margin: 30px auto; }
+
+@media screen and (min-width: 767px) {
+  #hero .illustration img {
+    width: 50%; } }
+
+@media screen and (min-width: 1024px) {
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    #hero .heroText {
+      width: 50%; }
+    #hero .illustration {
+      width: 50%; } }
 
 #about {
   background: #679436;
