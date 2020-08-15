@@ -229,6 +229,8 @@ html {
       background: #679436;
       color: white;
       font-weight: bold; }
+      #contact form button:disabled {
+        filter: grayscale(75%); }
 
 @media (min-width: 1000px) {
   #contact form {

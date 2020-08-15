@@ -46,6 +46,9 @@
       background: $accent;
       color: white;
       font-weight: bold;
+      &:disabled {
+        filter: grayscale(75%);
+      }
     }
   }
 }
