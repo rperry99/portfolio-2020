@@ -17,6 +17,14 @@ html {
   height: 100%;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 2rem !important;
+}
+
 // Mixins
 @mixin center-content {
   display: flex;

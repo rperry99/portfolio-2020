@@ -10,6 +10,12 @@ body,
 html {
   height: 100%; }
 
+h2 {
+  font-size: 3rem; }
+
+section {
+  padding: 2rem !important; }
+
 #hero {
   height: 100%;
   display: flex;
@@ -185,7 +191,7 @@ html {
       flex-wrap: wrap; } }
 
 #contact {
-  padding: 10rem 1rem 2rem;
+  padding: 1.5rem;
   background: #5a6155;
   position: relative; }
   #contact .custom-shape-divider-top-1593742952 {
