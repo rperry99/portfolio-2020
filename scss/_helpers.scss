@@ -17,9 +17,25 @@ html {
   height: 100%;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 2rem !important;
+}
+
 // Mixins
 @mixin center-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// General Media Queries
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 }

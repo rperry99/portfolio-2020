@@ -10,6 +10,17 @@ body,
 html {
   height: 100%; }
 
+h2 {
+  font-size: 3rem; }
+
+section {
+  padding: 2rem !important; }
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 1.25rem;
+    text-align: center; } }
+
 #hero {
   height: 100%;
   display: flex;
@@ -130,6 +141,8 @@ html {
         height: 167px;
         width: 300px;
         margin: 0 auto;
+        padding: 0;
+        margin: 0;
         background-size: cover;
         background-position: center;
         margin-bottom: 1rem;
@@ -185,40 +198,24 @@ html {
       flex-wrap: wrap; } }
 
 #contact {
-  padding: 10rem 1rem 2rem;
+  padding: 1.5rem;
   background: #5a6155;
   position: relative; }
-  #contact .custom-shape-divider-top-1593742952 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0; }
-    #contact .custom-shape-divider-top-1593742952 svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 150px; }
-    #contact .custom-shape-divider-top-1593742952 .shape-fill {
-      fill: #ffffff; }
   #contact h2 {
     color: white; }
   #contact form {
-    width: 80%;
+    width: 80% !important;
     margin: 1rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    display: grid;
+    grid-template-areas: 'name message' 'email message' 'subject message' 'send send';
+    grid-gap: 1rem; }
     #contact form input,
     #contact form textarea {
       width: 100%;
       outline: none;
       padding: 0.5rem;
       border: none;
-      border-radius: 5px;
-      margin-bottom: 1rem; }
+      border-radius: 5px; }
     #contact form button {
       width: 100%;
       height: 50px;
@@ -228,13 +225,26 @@ html {
       border: none;
       background: #679436;
       color: white;
-      font-weight: bold; }
+      font-weight: bold;
+      grid-area: send; }
       #contact form button:disabled {
         filter: grayscale(75%); }
+    #contact form #name {
+      grid-area: name; }
+    #contact form #email {
+      grid-area: email; }
+    #contact form #subject {
+      grid-area: subject; }
+    #contact form #message {
+      grid-area: message; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   #contact form {
-    width: 50%; } }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%; } }
 
 footer {
   position: relative;
