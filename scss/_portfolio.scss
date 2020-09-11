@@ -9,10 +9,13 @@ $port-margin: 1rem;
     @include center-content;
     flex-direction: column;
     .card {
+      @media (max-width:769px) {
+        padding: 0;
+      }
       width: 100%;
       padding: 1rem;
       margin: 0 auto;
-      margin-bottom: $port-margin;
+      margin-bottom: $port-margin; 
       h3 {
         text-align: center;
         margin-bottom: $port-margin;
