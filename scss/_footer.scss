@@ -1,7 +1,7 @@
 footer {
   position: relative;
   height: max-content;
-  background: $black;
+  background: lighten($black, 15%);
   padding: 2rem 1rem;
   #back-to-top {
     position: absolute;
@@ -15,6 +15,9 @@ footer {
     border-radius: 5px;
     @include center-content;
     text-decoration: none;
+    i {
+      color: white;
+    }
   }
   #socials {
     display: flex;
@@ -39,10 +42,10 @@ footer {
     }
   }
   #copy {
-    color: $primary;
+    color: white;
     text-align: center;
     span {
-      color: $primary;
+      color: white;
     }
   }
 }

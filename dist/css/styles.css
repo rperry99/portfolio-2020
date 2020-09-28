@@ -40,7 +40,7 @@ section {
       margin-bottom: 1rem;
       padding: 0 1rem; }
       #hero .heroText h1 span {
-        color: #679436; }
+        color: #306844; }
     #hero .heroText .tagline {
       padding: 0 1rem;
       font-size: 1rem;
@@ -57,7 +57,7 @@ section {
     font-size: 1.25rem; }
     #hero #check-it-out i:before {
       font-size: 2rem;
-      color: #679436; }
+      color: #306844; }
   #hero .illustration {
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ section {
       width: 50%; } }
 
 #about {
-  background: #679436;
+  background: #306844;
   padding: 2rem 1rem;
   margin-top: 2rem;
   position: relative;
@@ -100,7 +100,7 @@ section {
     height: 50px;
     width: 50%;
     content: '';
-    background: #9ac868;
+    background: #50ae72;
     position: absolute;
     z-index: -1;
     top: -25px;
@@ -164,10 +164,10 @@ section {
         #portfolio #projects .card .buttons .github {
           margin-right: 20px;
           background: white;
-          border: solid 2px #679436;
-          color: #679436; }
+          border: solid 2px #306844;
+          color: #306844; }
         #portfolio #projects .card .buttons .live {
-          background: #679436;
+          background: #306844;
           color: white; }
     #portfolio #projects .stack ul {
       display: flex;
@@ -200,7 +200,7 @@ section {
 
 #contact {
   padding: 1.5rem;
-  background: #5a6155;
+  background: #8d9686;
   position: relative; }
   #contact h2 {
     color: white; }
@@ -224,7 +224,7 @@ section {
       border-radius: 5px;
       outline: none;
       border: none;
-      background: #679436;
+      background: #306844;
       color: white;
       font-weight: bold;
       grid-area: send; }
@@ -250,14 +250,14 @@ section {
 footer {
   position: relative;
   height: max-content;
-  background: #41463d;
+  background: #676f61;
   padding: 2rem 1rem; }
   footer #back-to-top {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -20px;
-    background: #679436;
+    background: #306844;
     width: 40px;
     height: 40px;
     font-size: 2rem;
@@ -266,6 +266,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-decoration: none; }
+    footer #back-to-top i {
+      color: white; }
   footer #socials {
     display: flex;
     justify-content: space-between;
@@ -287,10 +289,10 @@ footer {
       footer #socials a:hover i {
         color: #41463d; }
   footer #copy {
-    color: #8d909b;
+    color: white;
     text-align: center; }
     footer #copy span {
-      color: #8d909b; }
+      color: white; }
 
 @media (min-width: 767px) {
   footer #socials {
