@@ -10,31 +10,64 @@ body,
 html {
   height: 100%; }
 
+body {
+  position: relative; }
+
 h2 {
   font-size: 2rem; }
 
 section {
-  padding: 2rem !important; }
+  height: 100vh;
+  width: calc(100vw - 200px);
+  float: right; }
 
 @media screen and (max-width: 1000px) {
   h2 {
     font-size: 1.25rem;
     text-align: center; } }
 
+nav {
+  height: 100vh;
+  background: #306844;
+  width: 200px;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  nav ul {
+    list-style-type: none; }
+  nav .anchors li {
+    padding: 10px;
+    border-bottom: solid 1px #b9dec6; }
+    nav .anchors li:first-of-type {
+      border-top: solid 1px #b9dec6; }
+    nav .anchors li .nav-link {
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer; }
+    nav .anchors li:hover {
+      background: #408b5b; }
+  nav .socials {
+    display: flex;
+    flex-wrap: wrap; }
+    nav .socials li {
+      text-align: center;
+      width: 50%;
+      padding: 10px; }
+      nav .socials li a {
+        font-size: 2rem; }
+        nav .socials li a i {
+          color: white; }
+
 #hero {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
-  flex-direction: column;
-  position: relative;
   padding: 0;
-  box-sizing: border-box;
-  width: 90%;
-  margin: 0 auto; }
+  box-sizing: border-box; }
   #hero .heroText {
-    width: 100%; }
+    width: max-content; }
     #hero .heroText h1 {
       font-size: 2.25rem;
       margin-bottom: 1rem;
@@ -45,42 +78,6 @@ section {
       padding: 0 1rem;
       font-size: 1rem;
       word-wrap: wrap; }
-  #hero #check-it-out {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.25rem; }
-    #hero #check-it-out i:before {
-      font-size: 2rem;
-      color: #306844; }
-  #hero .illustration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-    #hero .illustration img {
-      width: 70%;
-      margin: 30px auto; }
-
-@media screen and (min-width: 767px) {
-  #hero .illustration img {
-    width: 50%; } }
-
-@media screen and (min-width: 1024px) {
-  #hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row; }
-    #hero .heroText {
-      width: 50%; }
-    #hero .illustration {
-      width: 50%; } }
 
 #about {
   background: #306844;
