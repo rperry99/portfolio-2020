@@ -61,23 +61,42 @@ nav {
           color: white; }
 
 #hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
+  #hero .video-background {
+    height: 110%;
+    width: 110%;
+    position: relative; }
+    #hero .video-background video {
+      height: 100%;
+      filter: blur(10px); }
+  #hero .overlay {
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    right: 0;
+    top: 0; }
   #hero .heroText {
-    width: max-content; }
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
     #hero .heroText h1 {
       font-size: 2.25rem;
       margin-bottom: 1rem;
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      color: white; }
       #hero .heroText h1 span {
         color: #306844; }
     #hero .heroText .tagline {
       padding: 0 1rem;
       font-size: 1rem;
-      word-wrap: wrap; }
+      word-wrap: wrap;
+      color: white; }
 
 #about {
   background: #306844;

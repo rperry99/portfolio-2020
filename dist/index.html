@@ -15,6 +15,7 @@
     <!-- Side Nav -->
     <nav>
       <ul class='anchors'>
+        <li><a class='nav-link'>Home</a></li>
         <li><a class='nav-link'>About Me</a></li>
         <li><a class='nav-link'>Portfolio</a></li>
         <li><a class='nav-link'>Contact Me</a></li>
@@ -45,6 +46,12 @@
 
     <!-- Hero Section -->
     <section id="hero">
+      <div class="video-background">
+        <video loop muted autoplay>
+            <source src='img/code2.mp4' />
+        </video>
+      </div>
+      <div class="overlay"></div>
       <div class="heroText">
         <h1>Hi, my name is <span>Russ Perry</span>.</h1>
         <p class="tagline">
@@ -55,7 +62,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" >
+    <section id="about" style='display: none'>
       <h2>Get to know me</h2>
       <p>
         Hey there! I'm Russ, a web developer with three years of experience
@@ -71,7 +78,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" style='display: none'>
       <h2>Projects</h2>
       <div id="projects">
         <!-- Project Card -->
@@ -199,7 +206,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section id="contact">
+    <section id="contact" style='display: none'>
       <h2>Get in touch with me!</h2>
       <form name="contact" method="POST" data-netlify="true">
         <input type="text" name="name" id="name" placeholder="Name" required />

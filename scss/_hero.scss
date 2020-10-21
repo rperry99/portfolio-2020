@@ -1,13 +1,36 @@
 #hero {
-  @include center-content;
+  position: relative;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+  .video-background {
+    height: 110%;
+    width: 110%;
+    position: relative;
+    video {
+      height: 100%;
+      filter: blur(10px);
+    }
+  }
+  .overlay {
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    right: 0;
+    top: 0;
+  }
   .heroText {
     width: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     h1 {
       font-size: 2.25rem;
       margin-bottom: 1rem;
       padding: 0 1rem;
+      color: white;
       span {
         color: $accent;
       }
@@ -16,6 +39,7 @@
       padding: 0 1rem;
       font-size: 1rem;
       word-wrap: wrap;
+      color: white;
     }
   }
 }
