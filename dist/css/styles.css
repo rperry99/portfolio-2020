@@ -82,8 +82,8 @@ nav {
   #hero .heroText {
     width: max-content;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%); }
     #hero .heroText h1 {
       font-size: 2.25rem;
@@ -99,63 +99,59 @@ nav {
       color: white; }
 
 #about {
-  background: #306844;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
   position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; }
+  #about .about-content {
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   #about h2 {
-    color: white;
     margin-bottom: 1rem; }
   #about p {
-    color: white;
     line-height: 1.5rem;
     margin-bottom: 1rem; }
-  #about:before {
-    height: 50px;
-    width: 50%;
-    content: '';
-    background: #50ae72;
-    position: absolute;
-    z-index: -1;
-    top: -25px;
-    right: 50%;
-    transform-origin: center;
-    transform: skewX(45deg);
-    border-radius: 5px; }
-
-@media (min-width: 760px) {
-  #about:before {
-    width: 25%;
-    right: 75%; }
-  #about h2,
-  #about p {
-    width: 50%;
-    margin: 0 auto; }
-  #about h2 {
-    margin-bottom: 2rem; } }
 
 #portfolio {
-  padding: 2rem 1rem; }
+  padding: 2rem 0; }
   #portfolio h2 {
-    margin-bottom: 1rem; }
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic; }
   #portfolio #projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    width: 100%;
+    padding: 0;
+    margin: 0; }
     #portfolio #projects .card {
-      width: 100%;
-      padding: 1rem;
-      margin: 0 auto;
-      margin-bottom: 1rem; }
-      #portfolio #projects .card h3 {
-        text-align: center;
-        margin-bottom: 1rem; }
+      width: 100% !important;
+      padding: 3rem 5rem;
+      margin: 0 !important;
+      margin-bottom: 2rem;
+      display: flex;
+      width: 95%; }
+      #portfolio #projects .card:nth-of-type(even) {
+        background: rgba(48, 104, 68, 0.05); }
+        #portfolio #projects .card:nth-of-type(even) > .screenshot {
+          order: 5; }
+      #portfolio #projects .card .text-content {
+        font-size: 1.2rem; }
+        #portfolio #projects .card .text-content h3 {
+          text-align: center;
+          margin-bottom: 1rem;
+          font-size: 1.4rem; }
+        #portfolio #projects .card .text-content .stack span {
+          font-style: italic; }
+        #portfolio #projects .card .text-content p:not(:last-of-type) {
+          margin-bottom: 20px; }
+      #portfolio #projects .card > div {
+        margin-right: 100px; }
       #portfolio #projects .card .image {
-        height: 167px;
-        width: 300px;
+        border: solid 1px #306844;
+        height: 334px;
+        width: 600px;
         margin: 0 auto;
         background-size: cover;
         background-position: center;
@@ -170,8 +166,8 @@ nav {
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 30px;
-          width: 75px;
+          height: 40px;
+          width: 200px;
           text-decoration: none;
           border-radius: 5px; }
         #portfolio #projects .card .buttons .github {
@@ -182,75 +178,55 @@ nav {
         #portfolio #projects .card .buttons .live {
           background: #306844;
           color: white; }
-    #portfolio #projects .stack ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 90%;
-      margin: 0 auto;
-      list-style: none; }
-      #portfolio #projects .stack ul li {
-        color: #999;
-        font-style: italic; }
-        #portfolio #projects .stack ul li:not(:last-child) {
-          margin-right: 10px; }
-
-@media (min-width: 1020px) {
-  #portfolio #projects {
-    flex-direction: row;
-    flex-wrap: wrap; }
-    #portfolio #projects .card {
-      width: 45%; } }
-
-@media (min-width: 1440px) {
-  #portfolio #projects .card {
-    width: 23%; }
-    #portfolio #projects .card .stack ul {
-      width: 75%;
-      margin: 0 auto;
-      flex-wrap: wrap; } }
 
 #contact {
   padding: 1.5rem;
-  background: #8d9686;
   position: relative; }
-  #contact h2 {
-    color: white; }
-  #contact form {
-    width: 80% !important;
-    margin: 1rem auto;
-    display: grid;
-    grid-template-areas: 'name message' 'email message' 'subject message' 'send send';
-    grid-gap: 1rem; }
-    #contact form input,
-    #contact form textarea {
-      width: 100%;
-      outline: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px; }
-    #contact form button {
-      width: 100%;
-      height: 50px;
-      font-size: 1.2rem;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      background: #306844;
-      color: white;
-      font-weight: bold;
-      grid-area: send; }
-      #contact form button:disabled {
-        filter: grayscale(75%); }
-    #contact form #name {
-      grid-area: name; }
-    #contact form #email {
-      grid-area: email; }
-    #contact form #subject {
-      grid-area: subject; }
-    #contact form #message {
-      grid-area: message; }
+  #contact .contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: max-content; }
+    #contact .contact-container h2 {
+      text-align: center;
+      margin-bottom: 50px; }
+    #contact .contact-container form {
+      width: 80%;
+      margin: 1rem auto;
+      display: grid;
+      grid-template-areas: 'name message' 'email message' 'subject message' 'send send';
+      grid-gap: 1rem; }
+      #contact .contact-container form input,
+      #contact .contact-container form textarea {
+        width: 100%;
+        outline: none;
+        padding: 0.5rem;
+        border: solid 1px #306844;
+        border-radius: 5px; }
+      #contact .contact-container form button {
+        width: 45%;
+        height: 50px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #306844;
+        color: white;
+        font-weight: bold;
+        grid-area: send;
+        margin: 25px auto 0; }
+        #contact .contact-container form button:disabled {
+          filter: grayscale(75%); }
+      #contact .contact-container form #name {
+        grid-area: name; }
+      #contact .contact-container form #email {
+        grid-area: email; }
+      #contact .contact-container form #subject {
+        grid-area: subject; }
+      #contact .contact-container form #message {
+        grid-area: message; }
 
 @media (max-width: 1000px) {
   #contact form {
