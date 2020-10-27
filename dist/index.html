@@ -14,39 +14,43 @@
   <body>
     <!-- Side Nav -->
     <nav>
-      <ul class='anchors'>
-        <li><a class='nav-link'>Home</a></li>
-        <li><a class='nav-link'>About Me</a></li>
-        <li><a class='nav-link'>Portfolio</a></li>
-        <li><a class='nav-link'>Contact Me</a></li>
-      </ul>
-      <ul class="socials">
-        <li>
-          <a href="https://twitter.com/russp999" target="_blank">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/russ-perry-22b638a8/" target="_blank">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/rperry99" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://codepen.io/rperry1886" target="_blank">
-            <i class="fa fa-codepen"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" style='display: none'>
-      <div class="video-background">
+      <div>
+        <div class="profile-image" style='background: url("img/profile-img.jpg"); background-position: center; background-size: cover;'>
+        </div>
+        <ul class='anchors'>
+          <li onclick='showHome()'>Home</li>
+          <li onclick='showAbout()'>About Me</li>
+          <li onclick='showPortfolio()'>Portfolio</li>
+          <li onclick='showContact()'>Contact Me</li>
+        </ul>
+      </div>
+        <ul class="socials">
+          <li>
+            <a href="https://twitter.com/russp999" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/russ-perry-22b638a8/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rperry99" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/rperry1886" target="_blank">
+              <i class="fa fa-codepen"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Hero Section -->
+      <section id="hero" class='page-section' >
+        <div class="video-background">
         <video loop muted autoplay>
             <source src='img/code2.mp4' />
         </video>
@@ -62,7 +66,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" style='display: none'>
+    <section id="about"  class='page-section' style='display: none'>
       <div class="about-content">
         <h2>Who am I?</h2>
         <p>
@@ -80,7 +84,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" >
+    <section id="portfolio"  class='page-section' style='display: none'>
       <h2>Some of my work.</h2>
       <div id="projects">
         <!-- Project Card -->
@@ -204,7 +208,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section id="contact" style='display: none'>
+    <section id="contact"  class='page-section' style='display: none'>
       <div class="contact-container">
 
         <h2>Get in touch with me!</h2>

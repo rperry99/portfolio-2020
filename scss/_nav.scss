@@ -8,23 +8,34 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 
+  .profile-image {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    img {
+      width: 100%;
+    }
+  }
+
   ul {
     list-style-type: none;
   }
 
-  .anchors li {
-    padding: 10px;
-    border-bottom: solid 1px lighten($accent, 50);
-    &:first-of-type {
-      border-top: solid 1px lighten($accent, 50);
-    }
-    .nav-link {
+  .anchors {
+    li {
+      padding: 10px;
+      border-bottom: solid 1px lighten($accent, 50);
+      cursor: pointer;
       color: white;
       font-size: 1.5rem;
-      cursor: pointer;
-    }
-    &:hover {
-      background: lighten($accent, 10);
+      user-select: none;
+      &:first-of-type {
+        border-top: solid 1px lighten($accent, 50);
+      }
+      &:hover {
+        background: lighten($accent, 10);
+      }
     }
   }
 

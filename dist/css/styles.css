@@ -8,7 +8,8 @@
 
 body,
 html {
-  height: 100%; }
+  height: 100%;
+  background: whitesmoke; }
 
 body {
   position: relative; }
@@ -35,17 +36,24 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  nav .profile-image {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover; }
+    nav .profile-image img {
+      width: 100%; }
   nav ul {
     list-style-type: none; }
   nav .anchors li {
     padding: 10px;
-    border-bottom: solid 1px #b9dec6; }
+    border-bottom: solid 1px #b9dec6;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    user-select: none; }
     nav .anchors li:first-of-type {
       border-top: solid 1px #b9dec6; }
-    nav .anchors li .nav-link {
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer; }
     nav .anchors li:hover {
       background: #408b5b; }
   nav .socials {
@@ -115,7 +123,8 @@ nav {
     margin-bottom: 1rem; }
 
 #portfolio {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  flex-direction: column; }
   #portfolio h2 {
     margin-bottom: 5rem;
     text-align: center;
