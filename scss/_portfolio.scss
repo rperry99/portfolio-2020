@@ -39,6 +39,11 @@ $port-margin: 1rem;
         p:not(:last-of-type) {
           margin-bottom: 20px;
         }
+        a {
+          cursor: pointer;
+          border-bottom: solid 1px $accent;
+          text-decoration: none;
+        }
       }
       & > div {
         margin-right: 100px;
