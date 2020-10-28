@@ -27,7 +27,7 @@ $port-margin: 1rem;
         }
       }
       .text-content {
-        font-size: 1.2rem;
+        font-size: $default-text-size;
         h3 {
           text-align: center;
           margin-bottom: $port-margin;
@@ -36,13 +36,14 @@ $port-margin: 1rem;
         .stack span {
           font-style: italic;
         }
-        p:not(:last-of-type) {
-          margin-bottom: 20px;
+        p {
+          line-height: $default-line-height;
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
         }
         a {
-          cursor: pointer;
-          border-bottom: solid 1px $accent;
-          text-decoration: none;
+          @include link-styles;
         }
       }
       & > div {

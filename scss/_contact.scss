@@ -9,9 +9,11 @@
       text-align: center;
     }
     p {
-      text-align: center;
+      text-align: left;
       width: 80%;
       margin: 20px auto;
+      line-height: $default-line-height;
+      font-size: $default-text-size;
     }
     form {
       width: 80%;
