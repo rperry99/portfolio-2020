@@ -83,3 +83,28 @@ $port-margin: 1rem;
     }
   }
 }
+
+@media screen and (max-width: 1030px) {
+  .card {
+    flex-direction: column;
+    & > div {
+      margin: 10px 0;
+    }
+    .screenshot {
+      margin: 0 auto;
+    }
+  }
+
+  #portfolio #projects .card:nth-of-type(even) > .screenshot {
+    order: unset;
+  }
+
+  #portfolio #projects .card > .screenshot,
+  #portfolio #projects .card > .text-content {
+    margin: 0 auto;
+  }
+
+  #portfolio #projects .card > .text-content {
+    margin-top: 15px;
+  }
+}

@@ -22,11 +22,6 @@ section {
   width: calc(100vw - 200px);
   float: right; }
 
-@media screen and (max-width: 1000px) {
-  h2 {
-    font-size: 1.25rem;
-    text-align: center; } }
-
 nav {
   height: 100vh;
   background: #306844;
@@ -211,6 +206,21 @@ nav {
           background: #306844;
           color: white; }
 
+@media screen and (max-width: 1030px) {
+  .card {
+    flex-direction: column; }
+    .card > div {
+      margin: 10px 0; }
+    .card .screenshot {
+      margin: 0 auto; }
+  #portfolio #projects .card:nth-of-type(even) > .screenshot {
+    order: unset; }
+  #portfolio #projects .card > .screenshot,
+  #portfolio #projects .card > .text-content {
+    margin: 0 auto; }
+  #portfolio #projects .card > .text-content {
+    margin-top: 15px; } }
+
 #contact {
   padding: 1.5rem;
   position: relative; }
@@ -265,12 +275,8 @@ nav {
       #contact .contact-container form #message {
         grid-area: message; }
 
-@media (max-width: 1000px) {
-  #contact form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media screen and (max-width: 1030px) {
+  #contact .contact-container {
     width: 95%; } }
 
 footer {

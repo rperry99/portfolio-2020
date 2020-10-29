@@ -67,12 +67,8 @@
   }
 }
 
-@media (max-width: 1000px) {
-  #contact {
-    form {
-      @include center-content;
-      flex-direction: column;
-      width: 95%;
-    }
+@media screen and (max-width: 1030px) {
+  #contact .contact-container {
+    width: 95%;
   }
 }
