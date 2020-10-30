@@ -119,3 +119,23 @@ $port-margin: 1rem;
     }
   }
 }
+
+// Phone Media Query
+@media screen and (max-width: 426px) {
+  #portfolio {
+    #projects {
+      .card {
+        width: 100vw;
+        padding: 50px 15px;
+        .screenshot {
+          margin: 0 auto;
+          width: 95%;
+          .image {
+            width: 300px;
+            height: 167px;
+          }
+        }
+      }
+    }
+  }
+}
