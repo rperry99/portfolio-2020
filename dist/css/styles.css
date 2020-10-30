@@ -62,6 +62,21 @@ nav {
         font-size: 2rem; }
         nav .socials li a i {
           color: white; }
+  nav .hamburger {
+    height: 35px;
+    width: 35px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 20px; }
+    nav .hamburger .bar {
+      background: white;
+      height: 5px;
+      width: 100%;
+      border-radius: 10px; }
 
 @media screen and (max-width: 770px) {
   nav {
@@ -85,6 +100,32 @@ nav {
           border: none; }
     nav .socials {
       display: none; } }
+
+.mobile-nav-active {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh; }
+  .mobile-nav-active .anchors {
+    display: flex;
+    opacity: 1; }
+
+@media screen and (max-width: 426px) {
+  nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease; }
+    nav .anchors {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 35vh;
+      background: #306844;
+      width: 100vw;
+      margin: 0;
+      opacity: 0; }
+    nav .hamburger {
+      display: flex; } }
 
 #hero {
   position: relative;

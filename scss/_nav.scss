@@ -54,6 +54,24 @@ nav {
       }
     }
   }
+
+  .hamburger {
+    height: 35px;
+    width: 35px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    .bar {
+      background: white;
+      height: 5px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
 }
 
 // Tablet Media Query
@@ -83,6 +101,39 @@ nav {
     }
     .socials {
       display: none;
+    }
+  }
+}
+
+.mobile-nav-active {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  .anchors {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+// Large Phone Screen Media Query
+@media screen and (max-width: 426px) {
+  nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+    .anchors {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 35vh;
+      background: $accent;
+      width: 100vw;
+      margin: 0;
+      opacity: 0;
+    }
+    .hamburger {
+      display: flex;
     }
   }
 }
