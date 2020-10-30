@@ -97,3 +97,25 @@
     height: 100%;
   }
 }
+
+// Phone Media Query
+@media screen and (max-width: 426px) {
+  #contact {
+    padding: 0;
+    .contact-container {
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #message {
+          height: 100px;
+        }
+      }
+      p {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  }
+}
