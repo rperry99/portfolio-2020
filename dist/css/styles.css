@@ -316,6 +316,19 @@ nav {
         grid-area: subject; }
       #contact .contact-container form #message {
         grid-area: message; }
+  #contact .contact-socials {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); }
+    #contact .contact-socials ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      font-size: 2rem; }
+      #contact .contact-socials ul li {
+        list-style-type: none; }
 
 @media screen and (max-width: 1030px) {
   #contact .contact-container {

@@ -65,6 +65,22 @@
       }
     }
   }
+  .contact-socials {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      font-size: 2rem;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
 }
 
 // Big Tablet Media Query
