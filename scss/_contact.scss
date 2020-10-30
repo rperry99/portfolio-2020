@@ -67,8 +67,17 @@
   }
 }
 
+// Big Tablet Media Query
 @media screen and (max-width: 1030px) {
   #contact .contact-container {
     width: 95%;
+  }
+}
+
+// Tablet Media Query
+@media screen and (max-width: 770px) {
+  #contact {
+    width: 100%;
+    height: 100%;
   }
 }

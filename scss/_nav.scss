@@ -55,3 +55,34 @@ nav {
     }
   }
 }
+
+// Tablet Media Query
+@media screen and (max-width: 770px) {
+  nav {
+    height: max-content;
+    width: 100%;
+    padding: 0 10px;
+    .profile-image {
+      display: none;
+    }
+    .anchors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: unset;
+        padding: 0;
+        margin: 0;
+        border: none;
+        padding: 10px;
+        &:first-of-type {
+          border: none;
+        }
+      }
+    }
+    .socials {
+      display: none;
+    }
+  }
+}

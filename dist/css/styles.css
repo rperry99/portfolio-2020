@@ -63,6 +63,29 @@ nav {
         nav .socials li a i {
           color: white; }
 
+@media screen and (max-width: 770px) {
+  nav {
+    height: max-content;
+    width: 100%;
+    padding: 0 10px; }
+    nav .profile-image {
+      display: none; }
+    nav .anchors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      nav .anchors li {
+        width: unset;
+        padding: 0;
+        margin: 0;
+        border: none;
+        padding: 10px; }
+        nav .anchors li:first-of-type {
+          border: none; }
+    nav .socials {
+      display: none; } }
+
 #hero {
   position: relative;
   padding: 0;
@@ -101,6 +124,11 @@ nav {
       word-wrap: wrap;
       color: white; }
 
+@media screen and (max-width: 770px) {
+  #hero {
+    width: 100%;
+    height: 100%; } }
+
 #about {
   position: relative;
   border-bottom-left-radius: 20px;
@@ -127,6 +155,13 @@ nav {
       #about p span:hover {
         background: #306844;
         color: white; }
+
+@media screen and (max-width: 770px) {
+  #about {
+    width: 100%;
+    height: 100%; }
+    #about .about-content {
+      width: 95%; } }
 
 #portfolio {
   padding: 2rem 0;
@@ -221,6 +256,13 @@ nav {
   #portfolio #projects .card > .text-content {
     margin-top: 15px; } }
 
+@media screen and (max-width: 770px) {
+  #portfolio {
+    width: 100%; }
+    #portfolio h2 {
+      margin: 50px 0 0 0;
+      font-size: 2.25rem; } }
+
 #contact {
   padding: 1.5rem;
   position: relative; }
@@ -278,6 +320,11 @@ nav {
 @media screen and (max-width: 1030px) {
   #contact .contact-container {
     width: 95%; } }
+
+@media screen and (max-width: 770px) {
+  #contact {
+    width: 100%;
+    height: 100%; } }
 
 footer {
   position: relative;
