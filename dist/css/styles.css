@@ -223,6 +223,7 @@ nav {
     padding: 0;
     margin: 0; }
     #portfolio #projects .card {
+
       width: 100% !important;
       padding: 3rem 5rem;
       margin: 0 !important;
@@ -257,6 +258,7 @@ nav {
             color: white; }
       #portfolio #projects .card > div {
         margin-right: 100px; }
+
       #portfolio #projects .card .image {
         border: solid 1px #306844;
         height: 334px;
@@ -343,7 +345,10 @@ nav {
       width: 80%;
       margin: 1rem auto;
       display: grid;
-      grid-template-areas: 'name message' 'email message' 'subject message' 'send send';
+      grid-template-areas: 'name message'
+ 'email message'
+ 'subject message'
+ 'send send';
       grid-gap: 1rem; }
       #contact .contact-container form input,
       #contact .contact-container form textarea {
