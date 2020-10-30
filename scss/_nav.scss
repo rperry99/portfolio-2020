@@ -1,0 +1,139 @@
+nav {
+  height: 100vh;
+  background: $accent;
+  width: 200px;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .profile-image {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .anchors {
+    li {
+      padding: 10px;
+      border-bottom: solid 1px lighten($accent, 50);
+      cursor: pointer;
+      color: white;
+      font-size: 1.5rem;
+      user-select: none;
+      &:first-of-type {
+        border-top: solid 1px lighten($accent, 50);
+      }
+      &:hover {
+        background: lighten($accent, 10);
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      text-align: center;
+      width: 50%;
+      padding: 10px;
+      a {
+        font-size: 2rem;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    height: 35px;
+    width: 35px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    .bar {
+      background: white;
+      height: 5px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Tablet Media Query
+@media screen and (max-width: 770px) {
+  nav {
+    height: max-content;
+    width: 100%;
+    padding: 0 10px;
+    .profile-image {
+      display: none;
+    }
+    .anchors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: unset;
+        padding: 0;
+        margin: 0;
+        border: none;
+        padding: 10px;
+        &:first-of-type {
+          border: none;
+        }
+      }
+    }
+    .socials {
+      display: none;
+    }
+  }
+}
+
+.mobile-nav-active {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  .anchors {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+// Large Phone Screen Media Query
+@media screen and (max-width: 426px) {
+  nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+    .anchors {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 35vh;
+      background: $accent;
+      width: 100vw;
+      margin: 0;
+      opacity: 0;
+    }
+    .hamburger {
+      display: flex;
+    }
+  }
+}

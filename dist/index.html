@@ -12,218 +12,265 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="heroText">
-        <h1>Hi, my name is <span>Russ Perry</span>.</h1>
-        <p class="tagline">
+    <!-- Side Nav -->
+    <nav id='nav'>
+      <div>
+        <div class="profile-image" style='background: url("img/profile-img.jpg"); background-position: center; background-size: cover;'>
+        </div>
+        <ul class='anchors'>
+          <li onclick='showHome()'>Home</li>
+          <li onclick='showAbout()'>About Me</li>
+          <li onclick='showPortfolio()'>Portfolio</li>
+          <li onclick='showContact()'>Contact Me</li>
+        </ul>
+      </div>
+
+        <ul class="socials">
+          <li>
+            <a href="https://twitter.com/russp999" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/russ-perry-22b638a8/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rperry99" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/rperry1886" target="_blank">
+              <i class="fa fa-codepen"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger" id='hamburgerToggle'>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      
+      <!-- Hero Section -->
+      <section id="hero" class='page-section' >
+        <div class="video-background">
+          <video loop muted autoplay>
+            <source src='img/code2.mp4' />
+          </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="heroText">
+          <h1>Hi, my name is <span>Russ</span></h1>
+          <p class="tagline">
           I collaborate with my clients to create meaningful and engaging
           website experiences.
         </p>
       </div>
-      <div id="check-it-out">
-        <p>Check it out!</p>
-        <i class="fa fa-arrow-down"></i>
-      </div>
-      <div class="illustration"><img src="img/coder.svg" alt="Coder" /></div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-      <h2>Get to know me</h2>
-      <p>
-        Hey there! I'm Russ, a web developer with three years of experience
-        working for a national product team out of Cleveland, Ohio. I believe
-        great relationships and collaboration fuel the best web experiences. I'm
-        excited to learn more about your story and the passion you have for your
-        business.
-      </p>
-      <p>
-        Feel free to reach out below, I am currently available for freelance
-        projects.
-      </p>
+    <section id="about"  class='page-section' style='display: none'>
+      <div class="about-content">
+        <h2>Who am I?</h2>
+        <p>
+          Hey there! I'm Russ, a web developer with three years of experience
+          working for a national product team out of Cleveland, Ohio. I believe
+          great relationships and collaboration fuel the best web experiences. I'm
+          excited to learn more about your story and the passion you have for your
+          business.
+        </p>
+        <p>
+          Feel free to <span onclick='showContact()'>contact me</span>! I am currently available for freelance projects.
+        </p>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h2>Projects</h2>
+    <section id="portfolio"  class='page-section' style='display: none'>
+      <h2>Some of my work.</h2>
       <div id="projects">
         <!-- Project Card -->
         <div class="card">
-          <h3>Mountain Travel Website</h3>
-          <div
+          <div class="screenshot">
+            <div
             class="image"
             style="background-image: url('img/mountain-travel.jpg')"
-          ></div>
-          <div class="buttons">
-            <a
+            ></div>
+            <div class="buttons">
+              <a
               class="github"
               href="https://github.com/rperry99/MountainTravel"
               target="_blank"
               >GitHub</a
-            >
-            <a
+              >
+              <a
               class="live"
               target="_blank"
               href="https://rperry99.github.io/MountainTravel/build/"
               >Live</a
-            >
+              >
+            </div>
           </div>
-          <div class="stack">
-            <ul>
-              <li>HTML</li>
-              <li>SASS</li>
-              <li>JavaScript</li>
-              <li>Gulp.js</li>
-            </ul>
+
+          <div class="text-content">
+            <h3>Mountain Travel Website</h3>
+            <p>This project is a simple landing page for a fictional mountain travel company. They offer different trails and other mountain adventures. The site is meant to be a landing page for some information on the park.</p>
+            <p class='stack'>The stack for this project is <span>HTML5</span>, <span>SASS</span>, <span>JavaScript</span>, and <span>GULP</span>.</p>
           </div>
         </div>
         <!-- Project Card -->
         <div class="card">
-          <h3>Midna Campground Website</h3>
-          <div
+          <div class="screenshot">
+            <div
             class="image"
             style="background-image: url('img/midna.jpg')"
-          ></div>
-          <div class="buttons">
-            <a
+            ></div>
+            <div class="buttons">
+              <a
               class="github"
               href="https://github.com/rperry99/stargazing"
               target="_blank"
               >GitHub</a
-            >
-            <a
+              >
+              <a
               class="live"
               target="_blank"
               href="https://rperry99.github.io/stargazing/index.html"
               >Live</a
-            >
+              >
+            </div>
           </div>
-          <div class="stack">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Tailwind.css</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-            </ul>
+            <div class="text-content">
+              <h3>Midna Campground Website</h3>
+              <p>Midna Campground is a website that is a landing page for a campground. The user can find some information and photos of the campground. This is a fictional company / location.</p>
+              <p>I created this project as a fun challenge for myself to create a full website from start to finish in one day. I did end up going in after the challenge to make some changes to it.</p>
+              <p class="stack">The stack for this project is <span>HTML5</span>, <span>SASS</span>, and <span>JavaScript</span>.</p>
           </div>
         </div>
         <!-- Project Card -->
         <div class="card">
-          <h3>RGB Color Game</h3>
-          <div
+          <div class="screenshot">
+            <div
             class="image"
             style="background-image: url('img/color-game.jpg')"
-          ></div>
-          <div class="buttons">
-            <a
+            ></div>
+            <div class="buttons">
+              <a
               class="github"
               href="https://github.com/rperry99/color-game"
               target="_blank"
               >GitHub</a
-            >
-            <a
+              >
+              <a
               class="live"
               target="_blank"
               href="https://rperry99.github.io/color-game/index.html"
               >Live</a
-            >
+              >
+            </div>
           </div>
-          <div class="stack">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-            </ul>
+          <div class="text-content">
+            <h3>RGB Color Game</h3>
+            <p>This RGB Color game is a game where the player will be shown an RGB value. The player has to choose which color swatch matches the RGB color value given. As you advance in the levels, the game will get harder and harder. This game also takes advantage of LocalStorage so your high scores will be saved on your computer!</p>
+            <p>The idea for this project came from Drew over at <a href="https://drewlearns.com/">DrewLearns</a>. The project I got the idea from can be found <a href="https://drewlearns.com/portfolio/drew-learns-how-to-make-a-rgb-game/">here</a>.</p>
+            <p class="stack">The stack for this project is <span>HTML5</span>, <span>CSS3</span>, and <span>jQuery</span>.</p>
           </div>
         </div>
         <!-- Project Card -->
         <div class="card">
-          <h3>JavaScript Pokedex</h3>
-          <div
+          <div class="screenshot">
+
+            <div
             class="image"
             style="background-image: url('img/pokedex.jpg')"
-          ></div>
-          <div class="buttons">
-            <a
+            ></div>
+            <div class="buttons">
+              <a
               class="github"
               href="https://github.com/rperry99/js-pokedex"
               target="_blank"
               >GitHub</a
-            >
-            <a
+              >
+              <a
               class="live"
               target="_blank"
               href="https://rperry99.github.io/js-pokedex"
               >Live</a
-            >
+              >
+            </div>
           </div>
-          <div class="stack">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PokeAPI</li>
-            </ul>
+          <div class="text-content">
+            <h3>JavaScript Pokedex</h3>
+            <p>This project was inspired by different icon websites like <a href="https://feathericons.com/">Feather Icons</a>. The idea for this project was to show a list of the first 151 Pokemon as little cards.</p>
+            <p>When you click on a card, a little modal will pop up and you can see more details on that Pokemon.</p>
+            <p class='stack'>The stack used here is <span>HTML5</span>, <span>CSS</span>, <span>JavaScript</span>. This project used the <a href="https://pokeapi.co/">PokeAPI</a> to get the data and images for all of the Pokemon.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Form -->
-    <section id="contact">
-      <h2>Get in touch with me!</h2>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="text" name="name" id="name" placeholder="Name" required />
-        <input
+    <section id="contact"  class='page-section' style='display: none'>
+      <div class="contact-container">
+
+        <h2>Get in touch with me!</h2>
+        <p>If you would like to work with me, feel free to send me an email using the contact form below! I am currently available for freelace web development projects. I am looking forward to getting in touch so we can get your project started!</p>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" id="name" placeholder="Name *" required />
+          <input
           type="email"
           name="email"
           id="email"
-          placeholder="Email Address"
+          placeholder="Email Address *"
           required
-        />
-        <input
+          />
+          <input
           type="text"
           name="subject"
           id="subject"
-          placeholder="Subject"
+          placeholder="Subject *"
           required
-        />
-        <textarea
+          />
+          <textarea
           name="message"
           id="message"
           cols="30"
           rows="10"
-          placeholder="Message"
+          placeholder="Message *"
           required
-        ></textarea>
-        <button type="submit" name="submit" id="submitBtn">Send Email</button>
-      </form>
+          ></textarea>
+          <button type="submit" name="submit" id="submitBtn">Send Email</button>
+        </form>
+      </div>
+      <div class="contact-socials">
+        <ul>
+          <li>
+            <a href="https://twitter.com/russp999" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/russ-perry-22b638a8/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rperry99" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/rperry1886" target="_blank">
+              <i class="fa fa-codepen"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <a id="back-to-top" href="#"><i class="fa fa-level-up"></i></a>
-      <div id="socials">
-        <a href="https://twitter.com/russp999" target="_blank"
-          ><i class="fa fa-twitter"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/russ-perry-22b638a8/"
-          target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/rperry99" target="_blank"
-          ><i class="fa fa-github"></i
-        ></a>
-        <a href="https://codepen.io/rperry1886" target="_blank"
-          ><i class="fa fa-codepen"></i
-        ></a>
-      </div>
-      <p id="copy">Russ Perry <span>&copy;2020</span></p>
-    </footer>
     <script src="app.js"></script>
   </body>
 </html>
