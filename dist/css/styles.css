@@ -77,6 +77,24 @@ nav {
       height: 5px;
       width: 100%;
       border-radius: 10px; }
+    nav .hamburger .close-bar {
+      display: none; }
+
+.hamburger-close {
+  position: relative; }
+  .hamburger-close .bar {
+    display: none; }
+  .hamburger-close .close-bar {
+    display: block !important;
+    color: white !important;
+    font-size: 35px !important;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0; }
 
 @media screen and (max-width: 770px) {
   nav {
