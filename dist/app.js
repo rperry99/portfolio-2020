@@ -47,7 +47,8 @@ const nav = getElem('nav');
 
 function toggleNavClass() {
   if(window.innerWidth <= 426) {
-    nav.classList.toggle('mobile-nav-active')
+    nav.classList.toggle('mobile-nav-active');
+    hamburger.classList.toggle('hamburger-close');
   } else {
     return;
   }
@@ -55,6 +56,7 @@ function toggleNavClass() {
 
 hamburger.addEventListener('click', () => {
   toggleNavClass();
+  
 })
 
 //Function to quickly create variables for elements in the DOM

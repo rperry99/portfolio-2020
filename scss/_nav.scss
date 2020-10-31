@@ -71,6 +71,28 @@ nav {
       width: 100%;
       border-radius: 10px;
     }
+    .close-bar {
+      display: none;
+    }
+  }
+}
+
+.hamburger-close {
+  position: relative;
+  .bar {
+    display: none;
+  }
+  .close-bar {
+    display: block !important;
+    color: white !important;
+    font-size: 35px !important;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
   }
 }
 
